@@ -1,5 +1,5 @@
 export default function App() {
     return (
-        <div>i am host</div>
+        <div>i am sub</div>
     )
   }
