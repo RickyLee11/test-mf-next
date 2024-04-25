@@ -1,2 +1,14 @@
-import Home from '../components/bootstrap.js'
-export default Home
+import dynamic from 'next/dynamic';
+ 
+const HomeMy = dynamic(() => import('../components/bootstrap.js'), {
+  loading: () => <p>Loading...</p>,
+})
+ 
+
+export default function Home() {
+    return (
+    <>
+        <HomeMy />
+    </>
+    )
+}

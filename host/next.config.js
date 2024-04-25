@@ -18,10 +18,14 @@ const nextConfig = {
           }/remoteEntry.js`,
         },
         exposes: {
-          // './store': './zustand/store.js',
+          './store': './zustand/store.js',
         },
         shared: {
-       
+          'zustand': {
+            singleton: false,
+            requiredVersion: deps.zustand,
+            eager: false, 
+          }
         },
       }),
     );
