@@ -21,15 +21,15 @@ const nextConfig = {
           './button': './components/button.js',
         },
         shared: {
-          ...deps,
-          react: {
-            singleton: true,
-            requiredVersion: deps.react,
-          },
-          'react-dom': {
-            singleton: true,
-            requiredVersion: deps['react-dom']
-          },
+          // ...deps,
+          // react: {
+          //   singleton: true,
+          //   requiredVersion: deps.react,
+          // },
+          // 'react-dom': {
+          //   singleton: true,
+          //   requiredVersion: deps['react-dom']
+          // },
         },
       }),
     );

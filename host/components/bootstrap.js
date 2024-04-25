@@ -7,7 +7,7 @@ export default function Home() {
     const [count, increment, clear] = useStore((state) => [state.count, state.increment, state.clear]);
     return (
     <>
-        <RemoteButton />
+        <RemoteButton store={useStore}/>
         <div>i am host</div>
         <div>count: host {count}</div>
         <button onClick={increment}>host increment</button>

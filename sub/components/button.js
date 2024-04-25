@@ -1,7 +1,7 @@
 import React from 'react';
-import store from 'host/store';
+// import store from 'host/store';
 
-export default function SubButton() {
+export default function SubButton({store}) {
     const { count, increment } = store();
     return (
     <>
